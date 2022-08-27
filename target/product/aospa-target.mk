@@ -104,6 +104,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     remote_provisioning.enable_rkpd=true \
     remote_provisioning.hostname=remoteprovisioning.googleapis.com
 
+# Google Photos Pixel Exclusive XML
+PRODUCT_COPY_FILES += \
+    vendor/aospa/target/config/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
+
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
      vendor/aospa/target/config/aospa_vendor_framework_compatibility_matrix.xml
